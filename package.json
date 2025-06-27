@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "npm install"
+    "build": "echo 'Installing dependencies...' && npm install --production && echo 'Build completed!'",
+    "build:full": "npm install && echo 'Build with dev dependencies completed!'"
   },
   "keywords": [
     "trading",
