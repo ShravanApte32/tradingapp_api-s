@@ -1,21 +1,32 @@
 {
   "name": "trading-proxy",
   "version": "1.0.0",
+  "description": "Trading proxy server with web scraping capabilities",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "echo 'Nothing to build'"
+    "build": "npm install"
   },
-  "keywords": [],
+  "keywords": [
+    "trading",
+    "proxy",
+    "web-scraping",
+    "express"
+  ],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "nodemon": "^3.1.10",
-    "puppeteer": "^24.10.2"
+    "express": "^4.18.2",
+    "puppeteer": "^21.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
   }
 }
