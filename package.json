@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "echo 'Installing dependencies...' && npm install --production && echo 'Build completed!'",
+    "build": "webpack --config webpack.prod.js --mode production",
     "build:full": "npm install && echo 'Build with dev dependencies completed!'"
   },
   "keywords": [
@@ -28,6 +28,13 @@
     "puppeteer": "^21.11.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.3"
+    "@babel/core": "^7.27.7",
+    "babel-loader": "^10.0.0",
+    "nodemon": "^3.0.3",
+    "terser-webpack-plugin": "^5.3.14",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-node-externals": "^3.0.0"
   }
 }
